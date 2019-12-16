@@ -1,0 +1,13 @@
+query schoolCardQuery($name: String, $suburb: String, $postcode: Int, $level: Int, $selective: Int) {
+  	schools(name: $name,suburb: $suburb,postcode: $postcode,level: $level,selective: $selective) {
+			School_code
+			School_name
+			Street
+			Town_suburb
+			Postcode
+			Website
+			Phone
+			Latitude
+			Longitude
+		}
+}

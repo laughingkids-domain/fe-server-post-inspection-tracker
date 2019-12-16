@@ -1,0 +1,13 @@
+{
+  "name": "graph-domain",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "apollo-server": "^2.6.6",
+    "axios": "^0.19.0",
+    "graphql": "^14.3.1",
+    "graphql-import": "^0.7.1",
+    "p-iteration": "^1.1.8"
+  }
+}

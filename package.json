@@ -1,0 +1,23 @@
+{
+  "name": "property-arround-public-schools",
+  "version": "1.0.0",
+  "description": "Innovation day project 2019 June",
+  "main": "index.js",
+  "scripts": {
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/laughingkids-domain/property-arround-public-schools.git"
+  },
+  "keywords": [
+    "graphql",
+    "apollographql",
+    "react"
+  ],
+  "author": "Thomas Xiaojie Wang <laughingkids-domain>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/laughingkids-domain/property-arround-public-schools/issues"
+  },
+  "homepage": "https://github.com/laughingkids-domain/property-arround-public-schools#readme"
+}

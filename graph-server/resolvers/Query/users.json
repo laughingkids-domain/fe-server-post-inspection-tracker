@@ -1,0 +1,66 @@
+[
+  {
+    "userId": 1,
+    "firstName": "Thomas",
+    "lastName": "Wong",
+    "ageGroup": "30-35",
+    "location": "Sydney",
+    "ownedProperties": [
+      "2015907408",
+      "2015848247",
+      "2015755370",
+      "2015125672",
+      "2014281212",
+      "2014156979",
+      "2015913737",
+      "2015936866",
+      "2015346852",
+      "2014090366",
+      "2015920090",
+      "2015824604",
+      "2015851397",
+      "2015935303",
+      "2015898332",
+      "2015946312",
+      "2015959912",
+      "2015935501",
+      "2015540090",
+      "2015552493"
+    ]
+  },
+  {
+    "userId": 2,
+    "firstName": "Armin",
+    "lastName": "Ahmadi",
+    "ageGroup": "20-25",
+    "location": "Sydney"
+  },
+  {
+    "userId": 3,
+    "firstName": "James",
+    "lastName": "Holman",
+    "ageGroup": "25-30",
+    "location": "Sydney"
+  },
+  {
+    "userId": 4,
+    "firstName": "Paul",
+    "lastName": "Shan",
+    "ageGroup": "30-35",
+    "location": "Sydney"
+  },
+  {
+    "userId": 5,
+    "firstName": "Wei",
+    "lastName": "Qu",
+    "ageGroup": "30-35",
+    "location": "Sydney"
+  },
+  {
+    "userId": 6,
+    "firstName": "Nabi",
+    "lastName": "Rezvani",
+    "ageGroup": "30-35",
+    "location": "Sydney"
+  }
+]

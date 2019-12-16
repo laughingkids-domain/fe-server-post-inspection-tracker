@@ -1,0 +1,6 @@
+query keywordsQuery($term: String!) {
+	keywords(term:$term) {
+    names
+    suburbs
+  }
+}

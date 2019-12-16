@@ -1,0 +1,6 @@
+query propertyListQuery($address: String!) {
+	suggestions(address: $address, channel: "Residential") {
+		id
+		address
+	}
+}

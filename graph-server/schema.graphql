@@ -1,0 +1,147 @@
+type Listing {
+  objective: String
+  propertyTypes: [String]
+  status: String
+  saleMode: String
+  channel: String
+  addressParts: Address
+  advertiserIdentifiers: Advertiser
+  apmIdentifiers: ApmIdentifiers
+  bathrooms: Int
+  bedrooms: Int
+  carspaces: Int
+  dateCreated: String
+  dateUpdated: String
+  dateMinorUpdated: String
+  dateListed: String
+  datePurged: String
+  description: String
+  features: [String]
+  geoLocation: GeoLocation
+  headline: String
+  id: Int
+  inspectionDetails: InspectionDetails
+  isNewDevelopment: Boolean
+  media: [Media]
+  priceDetails: PriceDetails
+  propertyId: String
+  providerDetails: ProviderDetails
+  saleDetails: SaleDetails
+  isWithdrawn: Boolean
+  seoUrl: String
+  virtualTourUrl: String
+  homepassEnabled: Boolean
+}
+
+type Address {
+  stateAbbreviation: String
+  displayType: String
+  streetNumber: String
+  street: String
+  suburb: String
+  postcode: String
+  displayAddress: String
+}
+
+type Advertiser {
+  advertiserType: String
+  advertiserId: Int
+  contactIds: [Int]
+  agentIds: [String]
+}
+
+type ApmIdentifiers {
+  addressId: Int
+  streetId: Int
+  suburbId: Int
+  cadastreId: Int
+  postcodeId: Int
+  stateId: Int
+  state: String
+  propertyTypeId: Int
+  propertyTypeCategoryId: Int
+  streetNumber: String
+}
+
+type PriceDetails {
+  hiddenReasons: [String]
+  gstOption: String
+  priceUnit: String
+  priceFrom: Int
+  priceTo: Int
+  pricePrefix: String
+  canDisplayPrice: Boolean
+  displayPrice: String
+}
+
+type GeoLocation {
+  latitude: Float
+  longitude: Float
+}
+
+type ProviderDetails {
+  providerSystem: String
+  providerAdID: String
+}
+
+type SaleDetails {
+  saleMethod: String
+  soldDetails: SoldDetails
+  tenderDetails: TenderDetails
+  tenantDetails: TenantDetails
+  saleTerms: String
+}
+
+type SoldDetails {
+  soldAction: String
+  source: String
+  soldDate: String
+  canDisplayPrice: Boolean
+}
+
+type TenderDetails {
+  tenderRecipientName: String
+  tenderAddress: String
+}
+
+type TenantDetails {
+  leaseOptions: String
+  tenantName: String
+  tenantRentDetails: String
+}
+
+type Media {
+  category: String
+  type: String
+  url: String
+}
+
+type Inspections {
+  recurrence: String
+  closingDateTime: String
+  openingDateTime: String
+  userIds: [Int]
+}
+
+type InspectionDetails {
+  inspections: [Inspections]
+  pastInspections: [Inspections]
+  isByAppointmentOnly: Boolean
+}
+
+type UserDetail {
+  userId: Int
+  firstName: String
+  lastName: String
+  ageGroup: String
+  location: String
+  avatarUrl: String
+  ownedProperty: [String]
+}
+
+type Query {
+  listing(id: String!): Listing
+  user(id: Int!): UserDetail
+  users(ids: [Int]!): [UserDetail]
+  listings(ids: [String]!): [Listing]
+}

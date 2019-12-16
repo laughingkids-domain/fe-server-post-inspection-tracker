@@ -1,0 +1,17 @@
+query propertyCardQuery($id: String!) {
+	property(id:$id) {
+    id
+    addressCoordinate {
+      lat
+      lon
+    }
+    status
+    urlSlug
+    address
+    address
+    carSpaces
+    bathrooms
+    bedrooms
+    photos
+  }
+}
