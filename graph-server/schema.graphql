@@ -136,12 +136,22 @@ type UserDetail {
   ageGroup: String
   location: String
   avatarUrl: String
-  ownedProperty: [String]
+  ownedProperties: [String]
+}
+
+type UserDetailWithListing {
+  userId: Int
+  firstName: String
+  lastName: String
+  ageGroup: String
+  location: String
+  avatarUrl: String
+  ownedProperties: [Listing]
 }
 
 type Query {
   listing(id: String!): Listing
-  user(id: Int!): UserDetail
+  user(id: Int!): UserDetailWithListing
   users(ids: [Int]!): [UserDetail]
   listings(ids: [String]!): [Listing]
 }
